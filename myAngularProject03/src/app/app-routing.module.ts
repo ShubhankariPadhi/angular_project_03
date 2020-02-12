@@ -6,12 +6,24 @@ import {DepartmentDetailsComponent} from '../routingDemo/department-details/depa
 import {DepartmentContactComponent} from '../routingDemo/department-contact/department-contact.component';
 import {PageNotFoundCompComponent} from "../routingDemo/page-not-found-comp/page-not-found-comp.component";
 import {DepartmentOverviewCompComponent} from '../routingDemo/department-overview-comp/department-overview-comp.component';
+import {StudentDetailsComponent} from '../studentRouting/student-details/student-details.component';
+import {StudentOverviewComponent} from "../studentRouting/student-overview/student-overview.component";
+import {StudentListComponent} from "../studentRouting/student-list/student-list.component";
+import {StudentContactComponent} from "../studentRouting/student-contact/student-contact.component";
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'departments', pathMatch: 'full' },
   {path: 'departments', component: DepartmentListComponent},
   {path: 'employees', component: EmployeeListComponent},
   {path: 'departments/:id',component: DepartmentDetailsComponent},
+  {path: 'students',component: StudentListComponent},
+  {path: 'students/:id',component: StudentDetailsComponent,
+    children: [
+      { path: 'studentcon', component: StudentContactComponent},
+      { path: 'studentoverview', component: StudentOverviewComponent}
+    ]
+  },
   {
     path: 'departments/:id',
     component: DepartmentDetailsComponent,
@@ -35,4 +47,8 @@ export const routingComponents = [DepartmentListComponent,
                                  DepartmentContactComponent,
                                   EmployeeListComponent ,
                                   DepartmentOverviewCompComponent,
-                                  PageNotFoundCompComponent];
+                                  PageNotFoundCompComponent,
+  StudentDetailsComponent,
+  StudentListComponent,
+  StudentOverviewComponent,StudentContactComponent
+];
