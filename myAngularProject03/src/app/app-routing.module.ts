@@ -10,6 +10,7 @@ import {StudentDetailsComponent} from '../studentRouting/student-details/student
 import {StudentOverviewComponent} from "../studentRouting/student-overview/student-overview.component";
 import {StudentListComponent} from "../studentRouting/student-list/student-list.component";
 import {StudentContactComponent} from "../studentRouting/student-contact/student-contact.component";
+import {StudentmarkMarksComponent} from "../studentRouting/student-marks/student-marks.component";
 
 
 const routes: Routes = [
@@ -18,12 +19,19 @@ const routes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
   {path: 'departments/:id',component: DepartmentDetailsComponent},
   {path: 'students',component: StudentListComponent},
-  {path: 'students/:id',component: StudentDetailsComponent,
+  {path: 'students/:id',component: StudentListComponent,
+  children:[
+    { path: 'studentmarks', component: StudentmarkMarksComponent}
+  ]
+  },
+
+  /*{path: 'students/:id',component: StudentDetailsComponent,
     children: [
       { path: 'studentcon', component: StudentContactComponent},
-      { path: 'studentoverview', component: StudentOverviewComponent}
+      { path: 'studentoverview', component: StudentOverviewComponent},
+
     ]
-  },
+  },*/
   {
     path: 'departments/:id',
     component: DepartmentDetailsComponent,
@@ -50,5 +58,5 @@ export const routingComponents = [DepartmentListComponent,
                                   PageNotFoundCompComponent,
   StudentDetailsComponent,
   StudentListComponent,
-  StudentOverviewComponent,StudentContactComponent
+  StudentOverviewComponent,StudentContactComponent,StudentmarkMarksComponent
 ];
