@@ -4,9 +4,7 @@ import {ActivatedRoute, ParamMap} from "@angular/router";
 @Component({
   selector: 'app-edit-comp',
   template: `
-    <p>
-      edit-comp works!
-    </p>you have selected id {{selectedId}}
+    <p> you have selected id {{selectedId}}</p>
   `,
   styles: []
 })

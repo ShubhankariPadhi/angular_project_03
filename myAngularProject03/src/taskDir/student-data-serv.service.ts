@@ -12,8 +12,8 @@ export class StudentDataServService {
   }
   getStudentMarks(){
     return [
-      {"id":1,"subjects":{"english": 79,"math":88}},
-      {"id":2,"subjects":{"english": 85,"math":87}},
+      {"id":1,"subjects":{"english": 79,"math":88,"physics":95,"chemistry":92,"IT":97}},
+      {"id":2,"subjects":{"english": 85,"math":84,"physics":87,"chemistry":93,"IT":94}},
     ];
   }
   constructor() { }

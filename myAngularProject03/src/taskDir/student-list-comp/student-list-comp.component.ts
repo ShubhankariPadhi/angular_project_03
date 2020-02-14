@@ -5,9 +5,7 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
 @Component({
   selector: 'app-student-list-comp',
   template: `
-    <p>
-      student-list-comp works!
-    </p>
+   <br>
     <ng-container *ngFor="let student of stuDataArray">
       <table>
         <tr><td>
@@ -28,14 +26,22 @@ stuDataArray=[];
     this.stuDataArray=this.studentData.getStudentData();
 
   }
-
-view(id){
- // this.router.navigate(['studentlist','studentmarks',{id}]);
-
- this.router.navigate(['studentlist','studentmarks',{id}],{relativeTo:this.route});
+/* parent child relationship case-1*/
+/*view(id){
+  this.router.navigate(['studentlist/studentmarks',id]);
 }
-edit(id){
-  this.router.navigate(['studentlist','studentEdit',{id}],{relativeTo:this.route});
+edit(sid){
+  this.router.navigate(['studentlist/studentEdit',sid]);
 
-}
+
+}*/
+/*unrelated components case-2*/
+  view(id){
+    this.router.navigate(['studentmarks',id]);
+  }
+  edit(sid){
+    this.router.navigate(['studentEdit',sid]);
+
+
+  }
 }

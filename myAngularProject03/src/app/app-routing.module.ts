@@ -11,6 +11,9 @@ import {StudentOverviewComponent} from "../studentRouting/student-overview/stude
 import {StudentListComponent} from "../studentRouting/student-list/student-list.component";
 import {StudentContactComponent} from "../studentRouting/student-contact/student-contact.component";
 import {StudentmarkMarksComponent} from "../studentRouting/student-marks/student-marks.component";
+import {StudentListCompComponent} from "../taskDir/student-list-comp/student-list-comp.component";
+import {StudenMarksCompComponent} from "../taskDir/studen-marks-comp/studen-marks-comp.component";
+import {EditCompComponent} from "../taskDir/edit-comp/edit-comp.component";
 
 
 const routes: Routes = [
@@ -19,19 +22,13 @@ const routes: Routes = [
   {path: 'employees', component: EmployeeListComponent},
   {path: 'departments/:id',component: DepartmentDetailsComponent},
   {path: 'students',component: StudentListComponent},
-  {path: 'students/:id',component: StudentListComponent,
-  children:[
-    { path: 'studentmarks', component: StudentmarkMarksComponent}
-  ]
-  },
-
-  /*{path: 'students/:id',component: StudentDetailsComponent,
+   {path: 'students/:id',component: StudentDetailsComponent,
     children: [
       { path: 'studentcon', component: StudentContactComponent},
       { path: 'studentoverview', component: StudentOverviewComponent},
 
     ]
-  },*/
+  },
   {
     path: 'departments/:id',
     component: DepartmentDetailsComponent,
@@ -40,6 +37,18 @@ const routes: Routes = [
       { path: 'overview', component: DepartmentOverviewCompComponent}
     ]
   },
+  /*task directory parent child component case-1*/
+  /*{path:'studentlist',component:StudentListCompComponent,
+    children:[
+      {path:'studentmarks/:id',component:StudenMarksCompComponent},
+      {path:'studentEdit/:id',component:EditCompComponent}
+    ]
+  },*/
+/*unrelated components navigation using routings case-2*/
+  {path:'studentlist',component:StudentListCompComponent},
+  {path:'studentmarks/:id',component:StudenMarksCompComponent},
+  {path:'studentEdit/:id',component:EditCompComponent},
+
   { path: '**', component: PageNotFoundCompComponent}
 ];
 
@@ -58,5 +67,8 @@ export const routingComponents = [DepartmentListComponent,
                                   PageNotFoundCompComponent,
   StudentDetailsComponent,
   StudentListComponent,
-  StudentOverviewComponent,StudentContactComponent,StudentmarkMarksComponent
+  StudentOverviewComponent,StudentContactComponent,StudentmarkMarksComponent,
+  StudentListCompComponent,
+  StudenMarksCompComponent,
+  EditCompComponent
 ];

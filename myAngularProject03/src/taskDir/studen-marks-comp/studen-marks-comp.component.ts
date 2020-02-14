@@ -4,18 +4,24 @@ import {StudentDataServService} from "../student-data-serv.service";
 
 @Component({
   selector: 'app-studen-marks-comp',
-  template: `
-    <p>
-      studen-marks-comp works!
-    </p>
+template: `
+<br>
  <ng-container *ngFor="let mark of stuMarksArray ">
-   <span *ngIf="mark.id==selectedId">fsddasda {{mark.id}} {{mark.subjects.english}}</span>
-   
+   <span *ngIf="isSelected(mark.id)">
+   <table >
+     <tr><td></td><td colspan="5">Subjects</td></tr>
+     <tr><td>id </td>
+     <td> english </td><td>math </td>
+     <td> physics </td><td>chemistry </td> <td> IT </td> </tr>
+   <tr><td>{{mark.id}} </td> <td> {{mark.subjects.english}}</td><td> {{mark.subjects.math}}</td>
+     <td>{{mark.subjects.physics}}</td><td>{{mark.subjects.chemistry}}</td><td>{{mark.subjects.IT}}</td>
+   </tr> </table></span>
  </ng-container>
-  {{selectedId}}
+  
   `,
   styles: []
 })
+
 export class StudenMarksCompComponent implements OnInit {
   stuMarksArray=[];
   selectedId;
@@ -30,8 +36,8 @@ export class StudenMarksCompComponent implements OnInit {
    // console.log("selected id"+this.selectedId);
   }
   isSelected(markId){
-    console.log(markId===this.selectedId+" checking ");
-    return markId===this.selectedId;
+    console.log(markId==this.selectedId," checking ");
+    return markId==this.selectedId;
   }
-  //isSelected(markId);
+
 }
