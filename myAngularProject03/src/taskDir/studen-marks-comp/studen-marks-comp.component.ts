@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap} from "@angular/router";
 import {StudentDataServService} from "../student-data-serv.service";
 
@@ -6,38 +6,56 @@ import {StudentDataServService} from "../student-data-serv.service";
   selector: 'app-studen-marks-comp',
 template: `
 <br>
- <ng-container *ngFor="let mark of stuMarksArray ">
-   <span *ngIf="isSelected(mark.id)">
-   <table >
-     <tr><td></td><td colspan="5">Subjects</td></tr>
+<!--{{getSelectedId}}-->
+ <ng-container *ngFor="let mark of ary ">
+   <table *ngIf="isSelected(mark.id)">
+     <tr><td colspan="6">Marks</td></tr>
      <tr><td>id </td>
      <td> english </td><td>math </td>
      <td> physics </td><td>chemistry </td> <td> IT </td> </tr>
    <tr><td>{{mark.id}} </td> <td> {{mark.subjects.english}}</td><td> {{mark.subjects.math}}</td>
      <td>{{mark.subjects.physics}}</td><td>{{mark.subjects.chemistry}}</td><td>{{mark.subjects.IT}}</td>
-   </tr> </table></span>
+   </tr> </table>
  </ng-container>
+ 
   
+
   `,
-  styles: []
+  styles: [
+    `table,tr,td{
+    border: 2px solid black;
+      text-align: center;
+      border-collapse: collapse;
+    }
+    
+    `
+  ]
 })
 
 export class StudenMarksCompComponent implements OnInit {
+  @Input() ary;
+@Input() getSelectedId;
   stuMarksArray=[];
   selectedId;
-  constructor(private route:ActivatedRoute,private studentMarks: StudentDataServService) { }
+
+
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit() {
-    this.stuMarksArray=this.studentMarks.getStudentMarks();
     this.route.paramMap.subscribe((params: ParamMap)=> {
       let id = (params.get('id'));
       this.selectedId = id;
     });
-   // console.log("selected id"+this.selectedId);
+    console.log("inside con"+this.getSelectedId);
+    console.log("selected id"+this.selectedId);
   }
   isSelected(markId){
-    console.log(markId==this.selectedId," checking ");
-    return markId==this.selectedId;
+    //alert(this.getSelectedId);
+    console.log("inside method"+this.getSelectedId);
+    console.log(this.ary[0].subjects.english);
+    console.log(markId==this.getSelectedId," checking ");
+    return markId==this.getSelectedId;
+
   }
 
 }

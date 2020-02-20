@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, ParamMap} from "@angular/router";
 
 @Component({
-  selector: 'app-edit-comp',
+ /* selector: 'app-edit-comp',*/
   template: `
     <p> you have selected id {{selectedId}}</p>
   `,
