@@ -1,4 +1,16 @@
 <p>student-details works!</p>
 <button (click)="showOverview()">showovr</button>
 <button (click)="showContact()">showContact</button>
+<button (click)="showMarks()">showContact</button>
 <router-outlet></router-outlet>
+<p>studentid is</p>
+{{studentId}}
+<ul>
+  <li *ngFor="let mark of markArray"   >
+    <span *ngIf="true">mark id: {{mark.id}}</span>
+    <!--(click)="view(mark)">-->
+   <!-- <span *ngIf="isSelected(mark)">-->
+    <!--<span *ngIf="view(mark)">
+      <span class="badge">{{mark.id}}</span> {{mark.name}}</span>-->
+  </li>
+</ul>

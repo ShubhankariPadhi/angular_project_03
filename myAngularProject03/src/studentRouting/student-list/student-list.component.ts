@@ -7,13 +7,13 @@ import {StudentServiceService} from "../student-service.service";
   template: `
     <h3>
       Student List
-    </h3><router-outlet></router-outlet>
+    </h3>
     <ul class="items">
       <li *ngFor="let student of students" (click)="onSelect(student)">
         <span class="badge">{{student.id}}</span> {{student.name}} Address: {{student.address.area}}
-        <button (click)="view(student)"> view </button> <button> edit</button>
+        <button (click)="view(student.id)"> view </button> <button> edit</button>
       </li>
-    </ul>  
+    </ul> <router-outlet></router-outlet> 
   `,
   styles: []
 })
@@ -38,8 +38,8 @@ marks=[];
     this.router.navigate([student.id], { relativeTo: this.route });
   }
   view(stu){
-    console.log(stu.id);
-    this.router.navigate([stu.id], { relativeTo: this.route });
+    console.log(stu);
+    this.router.navigate(['students',{stu}]);
 
   }
 }

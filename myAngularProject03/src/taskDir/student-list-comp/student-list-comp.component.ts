@@ -14,14 +14,14 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
         </td><td> <button (click)="view(student.id)">view</button></td><td><button (click)="edit(student.id)">edit</button></td>
        </tr></table>-->
 
-   <ng-container >
+   <div class="container col-md-12 col-sm-12 col-12" >
      
-     <table >
+     <table  class="table">
        <tr><td colspan="6">Student list</td></tr>
        <tr  *ngFor="let student of stuDataArray" ><td>
          {{student.id}}</td><td>{{student.name}}</td><td>{{student.address.area}}</td><td>{{student.address.zipcode}}
        </td><td> <button id="viewbtn" (click)="view(student.id,stuMarks)">view</button></td><td><button id="editbtn" (click)="edit(student.id)">edit</button></td>
-       </tr></table></ng-container>
+       </tr></table></div>
    <router-outlet></router-outlet>
   <!-- <ng-container *ngIf=(selectedId!=null)>-->
    <app-studen-marks-comp  [ary]="stuMarks" [getSelectedId]="selectedId" ></app-studen-marks-comp>
@@ -41,6 +41,7 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
   #editbtn{
     background-color: lightpink;
   }
+    
   `]
 })
 export class StudentListCompComponent implements OnInit {

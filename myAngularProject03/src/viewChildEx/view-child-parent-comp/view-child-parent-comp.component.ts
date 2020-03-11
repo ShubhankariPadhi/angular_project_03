@@ -6,23 +6,29 @@ import {ViewChildChildCompComponent} from "../view-child-child-comp/view-child-c
   template: `
     
     
-    Message: {{ message }}
-    <app-view-child-child-comp></app-view-child-child-comp>
+    ChildMessage: {{getChildMessage}}
+    <app-view-child-child-comp [getfromParent]="parentmessage" (messageEvent)="receiveMessage()"></app-view-child-child-comp>
   `,
   styles: []
 })
 export class ViewChildParentCompComponent implements OnInit {
-  @ViewChild(ViewChildChildCompComponent,{static: true}) child;
+@ViewChild(ViewChildChildCompComponent,{static :true}) childInstance;
+  getChildMessage:string;
+
+parentmessage="this is sharing  parent data to child using @Input";
+
 
   constructor() { }
 
-  message:string;
+
 
   /*ngAfterViewInit() {
     this.message = this.child.message
   }*/
   ngOnInit() {
-    this.message = this.child.message
+   this.getChildMessage=this.childInstance.message;
   }
+  receiveMessage(){
 
+  }
 }

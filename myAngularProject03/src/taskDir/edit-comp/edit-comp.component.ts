@@ -4,7 +4,13 @@ import {ActivatedRoute, ParamMap} from "@angular/router";
 @Component({
  /* selector: 'app-edit-comp',*/
   template: `
-    <p> you have selected id {{selectedId}}</p>
+    <div class="container col-md-12 col-sm-12 col-12">
+      <table class="table table-bordered">
+        <tr>
+        <th> you have selected</th><td>{{selectedId}}</td></tr>
+      </table>
+    </div>
+    
   `,
   styles: []
 })

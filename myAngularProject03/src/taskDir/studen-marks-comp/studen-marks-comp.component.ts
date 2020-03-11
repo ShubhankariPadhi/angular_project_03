@@ -7,8 +7,8 @@ import {StudentDataServService} from "../student-data-serv.service";
 template: `
 <br>
 <!--{{getSelectedId}}-->
- <ng-container *ngFor="let mark of ary ">
-   <table *ngIf="isSelected(mark.id)">
+ <div class="container col-md-12 col-sm-12 col-12" *ngFor="let mark of ary ">
+   <table class="table" *ngIf="isSelected(mark.id)">
      <tr><td colspan="6">Marks</td></tr>
      <tr><td>id </td>
      <td> english </td><td>math </td>
@@ -16,7 +16,7 @@ template: `
    <tr><td>{{mark.id}} </td> <td> {{mark.subjects.english}}</td><td> {{mark.subjects.math}}</td>
      <td>{{mark.subjects.physics}}</td><td>{{mark.subjects.chemistry}}</td><td>{{mark.subjects.IT}}</td>
    </tr> </table>
- </ng-container>
+ </div>
  
   
 

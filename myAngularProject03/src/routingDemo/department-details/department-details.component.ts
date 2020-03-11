@@ -11,7 +11,7 @@ import { ActivatedRoute, Router, ParamMap } from '@angular/router';
       <button (click)="showContact()">Contact</button>
     </p>
 
-    <router-outlet></router-outlet>
+
     <p>
       <button (click)="goPrevious()">Previous</button>
       <button (click)="goNext()">Next</button>
@@ -19,7 +19,7 @@ import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 
     <div>
       <button (click)="gotoDepartments()">Back</button>
-    </div>
+    </div>    <router-outlet></router-outlet>
   `,
   styles: []
 })
@@ -32,6 +32,7 @@ export class DepartmentDetailsComponent implements OnInit {
       let id = (params.get('id'));
       this.departmentId = id;
     });
+    console.log(this.departmentId);
   }
   goPrevious() {
     let previousId = this.departmentId - 1;

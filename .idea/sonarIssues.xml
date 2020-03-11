@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/app/app-routing.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/app/app.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/app/app.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/app/fstAFApp/insidefst-afaappcomp/insidefst-afaappcomp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/parent-comp/childcomp/childcomp.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/parent-comp/childcomp/childcomp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/parent-comp/parent-comp.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/parent-comp/parent-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/routingDemo/department-contact/department-contact.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/routingDemo/department-contact/department-contact.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/routingDemo/department-details/department-details.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/routingDemo/department-list/department-list.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/routingDemo/page-not-found-comp/page-not-found-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/studentRouting/student-details/student-details.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/studentRouting/student-details/student-details.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/studentRouting/student-list/student-list.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/studentRouting/student-marks/student-marks.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/studentRouting/student-overview/student-overview.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/studentRouting/student-service.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskDir/edit-comp/edit-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskDir/studen-marks-comp/studen-marks-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskDir/student-data-serv.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskDir/student-list-comp/student-list-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskUsingParentChildDS/parent-student/parent-student.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskUsingParentChildDS/student-data-for-comp.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskUsingParentChildDS/student-edit-child/student-edit-child.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/taskUsingParentChildDS/student-mark-child/student-mark-child.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/child-comp/child-comp.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/child-comp/child-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/databinding-comp/databinding-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/parent-comp/parent-comp.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/parent-comp/parent-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/view-child-child-comp/view-child-child-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/myAngularProject03/src/viewChildEx/view-child-parent-comp/view-child-parent-comp.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

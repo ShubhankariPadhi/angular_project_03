@@ -38,17 +38,16 @@ const routes: Routes = [
     ]
   },
   /*task directory parent child component case-1*/
-  /*{path:'studentlist',component:StudentListCompComponent,
+  {path:'studentlist',component:StudentListCompComponent,
     children:[
       {path:'studentmarks/:id',component:StudenMarksCompComponent},
-      {path:'studentEdit/:id',component:EditCompComponent}
+     /* {path:'studentEdit/:id',component:EditCompComponent}*/
     ]
-  },*/
+  },
 /*unrelated components navigation using routings case-2*/
-  {path:'studentlist',component:StudentListCompComponent},
-  {path:'studentmarks/:id',component:StudenMarksCompComponent},
+  /*{path:'studentlist',component:StudentListCompComponent},
+  {path:'studentmarks/:id',component:StudenMarksCompComponent},*/
   {path:'studentEdit/:id',component:EditCompComponent},
-
   { path: '**', component: PageNotFoundCompComponent}
 ];
 
