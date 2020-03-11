@@ -1,3 +1,4 @@
+import { HighlightDirective } from './../observablesExamples/highlight.directive';
 import { UnlessDirective } from './../observablesExamples/unless.directive';
 import { StructuraldirectivesComponent } from './../observablesExamples/structuraldirectives/structuraldirectives.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -37,7 +38,8 @@ import {EmployeeListComponent} from '../routingDemo/employee-list/employee-list.
     ViewChildChildCompComponent,
     DatabindingCompComponent,
     StructuraldirectivesComponent,
-    UnlessDirective
+    UnlessDirective,
+    HighlightDirective
 
       ],
   imports: [
