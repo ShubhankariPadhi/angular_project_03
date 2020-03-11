@@ -1,3 +1,4 @@
+import { StructuraldirectivesComponent } from './../observablesExamples/structuraldirectives/structuraldirectives.component';
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule, Router} from '@angular/router';
 import {EmployeeListComponent} from '../routingDemo/employee-list/employee-list.component';
@@ -48,7 +49,10 @@ const routes: Routes = [
   /*{path:'studentlist',component:StudentListCompComponent},
   {path:'studentmarks/:id',component:StudenMarksCompComponent},*/
   {path:'studentEdit/:id',component:EditCompComponent},
+  {path:'structuralDir',component:StructuraldirectivesComponent},
   { path: '**', component: PageNotFoundCompComponent}
+
+ 
 ];
 
 @NgModule({
