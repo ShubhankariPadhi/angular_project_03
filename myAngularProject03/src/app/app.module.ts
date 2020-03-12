@@ -1,3 +1,4 @@
+import { EmployeeListComponent } from './../routingDemo/employee-list/employee-list.component';
 import { HighlightDirective } from './../observablesExamples/highlight.directive';
 import { UnlessDirective } from './../observablesExamples/unless.directive';
 import { StructuraldirectivesComponent } from './../observablesExamples/structuraldirectives/structuraldirectives.component';
@@ -20,7 +21,7 @@ import {FormsModule} from "@angular/forms";
 /*import {StudentServiceService} from "../studentRouting/student-service.service";*/
 /*import {DepartmentListComponent} from '../routingDemo/department-list/department-list.component';
 import {EmployeeListComponent} from '../routingDemo/employee-list/employee-list.component';*/
-
+import {HttpClientModule} from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +40,15 @@ import {EmployeeListComponent} from '../routingDemo/employee-list/employee-list.
     DatabindingCompComponent,
     StructuraldirectivesComponent,
     UnlessDirective,
-    HighlightDirective
+    HighlightDirective,
+    EmployeeListComponent 
 
       ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [/*StudentServiceService*/],// old version follow this for service inclusion
   bootstrap: [AppComponent]

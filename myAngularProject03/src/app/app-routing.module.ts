@@ -1,7 +1,9 @@
+import { EmployeeListComponent } from './../HttpAndObservable/employee-list/employee-list.component';
+/* import { EmployeeListComponent } from './../routingDemo/employee-list/employee-list.component'; */
 import { StructuraldirectivesComponent } from './../observablesExamples/structuraldirectives/structuraldirectives.component';
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule, Router} from '@angular/router';
-import {EmployeeListComponent} from '../routingDemo/employee-list/employee-list.component';
+
 import {DepartmentListComponent} from '../routingDemo/department-list/department-list.component';
 import {DepartmentDetailsComponent} from '../routingDemo/department-details/department-details.component';
 import {DepartmentContactComponent} from '../routingDemo/department-contact/department-contact.component';
@@ -20,7 +22,7 @@ import {EditCompComponent} from "../taskDir/edit-comp/edit-comp.component";
 const routes: Routes = [
   { path: '', redirectTo: 'departments', pathMatch: 'full' },
   {path: 'departments', component: DepartmentListComponent},
-  {path: 'employees', component: EmployeeListComponent},
+  /* {path: 'employees', component: EmployeeListComponent}, */
   {path: 'departments/:id',component: DepartmentDetailsComponent},
   {path: 'students',component: StudentListComponent},
    {path: 'students/:id',component: StudentDetailsComponent,
@@ -50,6 +52,9 @@ const routes: Routes = [
   {path:'studentmarks/:id',component:StudenMarksCompComponent},*/
   {path:'studentEdit/:id',component:EditCompComponent},
   {path:'structuralDir',component:StructuraldirectivesComponent},
+
+{path:'httpObservables',component:EmployeeListComponent },
+
   { path: '**', component: PageNotFoundCompComponent}
 
  
@@ -62,7 +67,7 @@ const routes: Routes = [
 export class AppRoutingModule {
 }
 export const routingComponents = [DepartmentListComponent,
-                                 EmployeeListComponent,
+                                 /* EmployeeListComponent ,*/
                                  DepartmentDetailsComponent,
                                  DepartmentContactComponent,
                                   EmployeeListComponent ,
