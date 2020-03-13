@@ -1,3 +1,4 @@
+import { IndiaComponent } from './../customObservable/india/india.component';
 import { EmployeeListComponent } from './../HttpAndObservable/employee-list/employee-list.component';
 /* import { EmployeeListComponent } from './../routingDemo/employee-list/employee-list.component'; */
 import { StructuraldirectivesComponent } from './../observablesExamples/structuraldirectives/structuraldirectives.component';
@@ -54,7 +55,7 @@ const routes: Routes = [
   {path:'structuralDir',component:StructuraldirectivesComponent},
 
 {path:'httpObservables',component:EmployeeListComponent },
-
+{path:'customObservable',component:IndiaComponent},
   { path: '**', component: PageNotFoundCompComponent}
 
  

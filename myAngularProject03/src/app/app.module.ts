@@ -1,3 +1,4 @@
+import { IndiaComponent } from './../customObservable/india/india.component';
 import { EmployeeListComponent } from './../routingDemo/employee-list/employee-list.component';
 import { HighlightDirective } from './../observablesExamples/highlight.directive';
 import { UnlessDirective } from './../observablesExamples/unless.directive';
@@ -41,7 +42,8 @@ import {HttpClientModule} from "@angular/common/http";
     StructuraldirectivesComponent,
     UnlessDirective,
     HighlightDirective,
-    EmployeeListComponent 
+    EmployeeListComponent,
+    IndiaComponent 
 
       ],
   imports: [

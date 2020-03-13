@@ -11,7 +11,7 @@ import 'rxjs/add/observable/throw';
   providedIn: 'root'
 })
 export class EmployeeService {
-private _url="/assets/data/employees1.json"; 
+private _url="/assets/data/employees.json"; 
 
   constructor(private http:HttpClient) { }
 
