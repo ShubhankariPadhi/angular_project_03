@@ -1,4 +1,4 @@
 [
-    {"id":1,"name":"subhi","age":22,"annualSalary":5500,"DateOfBirth":"11/23/1997"},
-    {"id":2,"name":"subh","age":23,"annualSalary":5500,"DateOfBirth":"02/11/1997"}
+    {"id":1,"name":"subhi","gender":"Female","age":22,"annualSalary":5500,"DateOfBirth":"11/23/1997"},
+    {"id":2,"name":"subham","gender":"Male","age":23,"annualSalary":5500,"DateOfBirth":"02/11/1997"}
 ]

@@ -1,3 +1,4 @@
+import { EmployeeTitlePipe } from './../HttpAndObservable/employee-title.pipe';
 import { IndiaComponent } from './../customObservable/india/india.component';
 import { EmployeeListComponent } from './../routingDemo/employee-list/employee-list.component';
 import { HighlightDirective } from './../observablesExamples/highlight.directive';
@@ -43,7 +44,8 @@ import {HttpClientModule} from "@angular/common/http";
     UnlessDirective,
     HighlightDirective,
     EmployeeListComponent,
-    IndiaComponent 
+    IndiaComponent ,
+    EmployeeTitlePipe
 
       ],
   imports: [
